@@ -214,7 +214,3 @@ class WechatMPChannel(ChatChannel):
         if self.passive_reply:
             assert session_id not in self.cache_dict
             self.running.remove(session_id)
-
-@robot.subscribe
-def subscribe_reply(message):
-    return '感谢关注！\n我是ai鸦，老板不在，您可以自由与我对话。其他详情可以点击下方菜单。'
